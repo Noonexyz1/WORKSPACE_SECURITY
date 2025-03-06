@@ -14,6 +14,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private DataUser dataUser;
 
+    // La tabla que es candidado a ser un UserDetails es aquella que tiene los campos username y pass o similares
     @Override
     public UserDetails loadUserByUsername(String username)
             throws UsernameNotFoundException {
